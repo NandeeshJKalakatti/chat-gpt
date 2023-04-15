@@ -1,4 +1,4 @@
-const API_KEY ="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"
+const API_KEY ="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"
 const submitButton = document.querySelector('#submit')
 const outPutElement = document.querySelector('#outpuut')
 const inputElement = document.querySelector('input')
@@ -23,7 +23,7 @@ async function getMessage(){
                   }
    
     try {
-        const response = await fetch("https://api.openai.com/v1/completions",op)
+        const response = await fetch("https://api.openai.com/v1/completions", op)
         const data = await response.json()
         console.log(data)
         outPutElement.textContent= data.choices[0].messeage.content
